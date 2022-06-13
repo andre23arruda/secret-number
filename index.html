@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="shortcut icon" href="./images/question.svg" type="image/x-icon">
+        <title>Número Secreto</title>
+    </head>
+
+    <body>
+        <main>
+            <h1>Acerte o número secreto</h1>
+
+            <h3>Ele está entre
+                <span id="minValue"></span>
+                e
+                <span id="maxValue"></span>
+            </h3>
+
+            <div class="guess">&nbsp;</div>
+        </main>
+
+        <div id="attempts" class="text-small"></div>
+
+        <button id="refresh">
+            🗘
+        </button>
+
+        <script src="./js/random-number.js"></script>
+        <script src="./js/validation.js"></script>
+        <script src="./js/speech-recognition.js"></script>
+    </body>
+</html>

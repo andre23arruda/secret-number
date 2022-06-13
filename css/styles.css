@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --bg-color: #06283D;
+    --primary-color: #DFF6FF;
+    --second-color: #47B5FF;
+    --third-color: #a54500;
+    --fourth-color: #fa7414;
+}
+
+body * {
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+body.game-over {
+    background-color: var(--third-color);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.text-small {
+    margin-top: 30px;
+}
+
+.box {
+    border: 2px solid var(--second-color);
+    font-size: 6rem;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 5px;
+    border: 2px solid var(--second-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+.game-over button {
+    border: 2px solid var(--fourth-color);
+}
